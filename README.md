@@ -12,7 +12,8 @@ Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https
 $ git clone https://github.com/sunyuelei/chat.git
 $ cd chatnew
 $ npm install
-$ node .
+$ cd bin
+$ pm2 start chat
 ```
 
 Your app should now be running on [https://内网ip(例如:192.168.1.45)].
