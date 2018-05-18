@@ -1,0 +1,25 @@
+
+extends layout
+
+
+block content
+    
+    form#myform(role="form",method="post")
+         fieldset#myfieldset
+            div#inputName
+                input#u(name="u",type='text',placeholder="登录账户",maxlength=20)
+                p#indextitle #{title}
+                br
+                span#name-error
+                input#p(name="p",type='password',placeholder="登录密码",maxlength=20)
+                br
+                span#password-error
+                p#errtip #{mess}  
+                button#okname(type="submit") 确认登录
+                br
+                a(href="../register")
+                    button#wantreg(type="button") 注册账号
+    script(src="/javascripts/jquery-1.11.2.js")
+    script(src="/javascripts/socket.io.js")
+    script(src="/javascripts/login.js")
+    script(src="/javascripts/rem.js")

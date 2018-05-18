@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  a#layout(href = '../') 登出
+  div#chat
+    div#msgContent
+      div#infouser
+          p#infowelcome
+           span#welcomecolor 欢迎：
+          p#currentuser #{user}
+          p#focusTip 请点击右侧好友列表,选择要聊天的好友,如果没有好友,请点击左下方添加(示例账号:sunyuelei)
+      ul#messages
+      form.form
+        div#sendContent
+          select#sel_obj
+            option(value="") 发送对象
+          input#m(maxlength=200,type='text')
+          button#s 发送
+
+    div#users
+      div#online
+          p#infofriend 好友列表
+      ol#userlist
+      div#dofriend
+        input#friendid(placeholder="sunyuelei" value="sunyuelei",maxlength=20)
+        br
+        button#addfriend 添加好友
+        button#deletefriend 删除好友
+  script(src="/javascripts/jquery-1.11.2.js")
+  script(src="/javascripts/socket.io.js")
+  script(src="/javascripts/chat.js")
