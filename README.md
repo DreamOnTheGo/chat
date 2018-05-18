@@ -9,13 +9,13 @@ This application supports the [Getting Started with Node on Heroku](https://devc
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
 
 ```sh
-$ git clone https://github.com/louzhedong/Webchat.git
-$ cd Webchat
+$ git clone https://github.com/sunyuelei/chat.git
+$ cd chatnew
 $ npm install
 $ node .
 ```
 
-Your app should now be running on [localhost:3000](http://localhost:3000/).
+Your app should now be running on [https://内网ip(例如:192.168.1.45)].
 
 
 ##Mysql配置
